@@ -8,7 +8,8 @@ add_column :users, :is_superadmin,:boolean, default: false
 ```
 
 
- ``` namespace :superadmin do
+ ``` 
+ namespace :superadmin do
     root :to => 'admin#index'
     resources :picture, except: [:new, :create]
     resources :users, except: [:new , :create]
